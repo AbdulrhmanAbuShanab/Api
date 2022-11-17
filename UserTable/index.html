@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="UserTable.css" />
+    <title>User Table</title>
+    
+  </head>
+  <body>
+    <main>
+      <div class="users">
+        <h1>All Users</h1>
+        <table class="users-table">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Email</th>
+              <th>Avatar</th>
+              <th>Operation</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+      <div class="addUser">
+        <h1>Add User</h1>
+        <form>
+          <label for="firstName">First Name</label>
+          <input
+            id="firstName"
+            name="firstName"
+            placeholder="Enter Your First Name"
+            required
+          />
+          <label for="lastName">Last Name</label>
+          <input
+            id="lastName"
+            name="lastName"
+            placeholder="Enter Your Last Name"
+            required
+          />
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            placeholder="Enter Your email"
+            type="email"
+            required
+          />
+          <label for="image">Image</label>
+          <input
+            id="image"
+            name="image"
+            placeholder="Enter Your image"
+            type="file"
+            accept="image/*"
+            required
+          />
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="UserTable.js"></script>
+  </body>
+</html>
