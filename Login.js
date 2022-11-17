@@ -20,7 +20,7 @@ form.addEventListener('submit', (event) => {
         alert('Login Failed');
     }
     else {
-        window.location.href = 'Usertable/index.html'
+        window.location.href = 'UserTable/index.html'
     }
 }
 postLogin.send(user);
